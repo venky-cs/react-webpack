@@ -11,10 +11,9 @@ module.exports = {
       },
       {
         test: /\.(css|s[ac]ss)$/,
-        use: [
-         "style-loader" , "css-loader","sass-loader"
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
+      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: "asset/resource" },
     ],
   },
   resolve: {
